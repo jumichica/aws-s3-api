@@ -1,0 +1,21 @@
+{
+  "name": "jumichica/aws-s3-api",
+  "description": "Api to integrate PHP with S3 and save files on Amazon AWS.",
+  "keywords": ["s3","api"],
+  "homepage": "https://github.com/jumichica/aws-s3-api",
+  "authors": [{
+    "name": "Edwin Ariza",
+    "email": "me@edwinariza.com"
+  }],
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "require": {
+      "php": "^7.2",
+      "aws/aws-sdk-php": "^3.134",
+      "nyholm/psr7": "^1.1"
+  },
+  "autoload": {
+    "classmap":["src/", "src/S3Api.php"]
+  }
+}
