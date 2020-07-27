@@ -24,13 +24,13 @@ class S3Api{
   public function get_buckets(){
     return $this->connector->listBuckets();
   }
-  public function upload($bucket, $filename){
+  public function upload($bucket, $filename, $file_path){
     try {
       // Upload data.
       $result = $this->connector->putObject([
         'Bucket' => $bucket,
         'Key'    => $filename,
-        'Body'   => 'Hello, world!',
+        'SourceFile' => $file_path,
         'ACL'    => 'public-read'
       ]);
 
