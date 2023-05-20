@@ -11,6 +11,7 @@ $region = '[REGION]';
 $secret = '[SECRET]';
 $file = 'prueba.txt';
 $bucket = '[BUCKET]';
+$file_path = '[FILE_PATH]';
 
 $s3->connect($api,$secret, $region);
-$s3->upload($bucket, $file);
+$s3->upload($bucket, $file, $file_path);

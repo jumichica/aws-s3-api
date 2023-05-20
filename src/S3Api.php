@@ -42,14 +42,14 @@ class S3Api{
    * @param $filename Nombre del archivo que se va a subir. - Puede ser diferente al nombre real del archivo.
    * @param $file_path Ruta completa al archivo que se desea subir.
    */
-  public function upload($bucket, $filename, $file_path){
+  public function upload($bucket, $filename, $file_path, $acl=""){
     try {
       // Upload data.
       $result = $this->connector->putObject([
         'Bucket' => $bucket,
         'Key'    => $filename,
         'SourceFile' => $file_path,
-        'ACL'    => 'public-read'
+        'ACL'    => $acl
       ]);
 
       // Print the URL to the object.

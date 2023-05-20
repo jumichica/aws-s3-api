@@ -11,9 +11,9 @@
   "license": "MIT",
   "version": "1.0.1",
   "require": {
-      "php": "^7.2",
-      "aws/aws-sdk-php": "^3.134",
-      "nyholm/psr7": "^1.1"
+      "php": ">=7.4",
+      "aws/aws-sdk-php": "^3.270.0",
+      "nyholm/psr7": "^1.8.0"
   },
   "autoload": {
     "classmap":["src/", "src/S3Api.php"]
