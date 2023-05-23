@@ -17,4 +17,11 @@ Simplify the AWS S3 interactions.
     $file_path = '[FILE_PATH]';
 
     $s3->connect($api,$secret, $region);
+    $s3->connect($api,$secret, $region);
+
+    // UPLOAD A FILE FROM LOCAL TO BUCKET
     $s3->upload($bucket, $file, $file_path);
+    
+    // DOWNLOAD FROM BUCKET TO LOCAL
+    $s3->download($bucket, $file, $file_path);
+
