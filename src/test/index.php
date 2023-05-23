@@ -1,7 +1,7 @@
 <?php
 #Ejemplo para subir un archivo con permisos públicos
 require(__DIR__.'/../../vendor/autoload.php');
-require_once(__DIR__. '/S3Api.php');
+require_once(__DIR__. '/../S3Api.php');
 
 use s3_api\S3Api;
 
